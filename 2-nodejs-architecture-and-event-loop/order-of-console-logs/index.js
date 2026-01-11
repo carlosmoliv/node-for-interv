@@ -53,7 +53,7 @@ console.log('end');
 // As always, before touching macro tasks, micro task queues are checked first
 
 // So first the process.nextTick Microtask queue is evaluated
-// There's a Callback there, scheduled by line 31 wich has a simple console.log
+// There's a Callback there, scheduled by line 31 which has a simple console.log
 // So nextTick is printed
 // This callback is then popped off the process.nextTick() Microtask queue
 
@@ -81,7 +81,6 @@ console.log('end');
 //
 // Therefore, 'Promise nextTick' is printed after 'Promise',
 // and only once the current Promise microtask queue has finished.
-
 
 //---------------------------------- THIS CONCLUDES RUNNING OF THE PROMISES MICROTASK QUEUE -------------------------------------------
 
